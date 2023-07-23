@@ -6,27 +6,27 @@
 </svg>
 <script>
 async function init() {
-    const data = await d3.csv('https://flunky.github.io/cars2017.csv');
-    x = d3.scaleLog().domain([10,150]).range([0,200]);
-    y = d3.scaleLog().domain([10,150]).range([200,0]);
+    const data = await d3.csv('FinalProjectData.csv');
+    x = d3.scaleLinear().domain([0,100]).range([0,200]);
+    y = d3.scaleLinear().domain([0,10]).range([200,0]);
     d3.select("svg")
     .append("g")
     .attr("transform","translate(50,50)")
     .selectAll("circle").data(data).enter().append('circle')
-    .attr('cx', function(d,i){ return x(parseInt(d.AverageCityMPG)); })
-    .attr('cy', function(d,i){ return y(parseInt(d.AverageHighwayMPG)); })
-    .attr('r', function(d,i){ return 2+parseInt(d.EngineCylinders); });
+    .attr('cx', function(d,i){ return x(parseInt(d.CorruptionPerceptionIndex)); })
+    .attr('cy', function(d,i){ return y(parseFloat(d.Score)); })
+    .attr('r', function(d,i){ return 2 });
 
     d3.select("svg").append("g")
     .attr("transform","translate(50,50)")
     .call(d3.axisLeft(y)
-    .tickValues([10,20,50,100])
+    .tickValues([2,4,6,8,10])
     .tickFormat(d3.format("~s")));
 
     d3.select("svg").append("g")
     .attr("transform","translate(50,250)")
     .call(d3.axisBottom(x)
-    .tickValues([10,20,50,100])
+    .tickValues([25,50,75,100])
     .tickFormat(d3.format("~s")));
 }
 </script>
