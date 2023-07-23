@@ -9,7 +9,7 @@ async function init() {
     const data = await d3.csv('https://gputcha2.github.io/CS416FinalProject/CS416Final.csv');
     console.log(data);
     x = d3.scaleLinear().domain([0,100]).range([0,200]);
-    y = d3.scaleLinear().domain([0,10]).range([200,0]);
+    y = d3.scaleLinear().domain([2,9]).range([200,0]);
     d3.select("svg")
     .append("g")
     .attr("transform","translate(50,50)")
@@ -21,7 +21,7 @@ async function init() {
     d3.select("svg").append("g")
     .attr("transform","translate(50,50)")
     .call(d3.axisLeft(y)
-    .tickValues([2,4,6,8,10])
+    .tickValues([2,4,6,8])
     .tickFormat(d3.format("~s")));
 
     d3.select("svg").append("g")
