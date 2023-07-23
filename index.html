@@ -15,7 +15,7 @@ async function init() {
     .attr("transform","translate(50,50)")
     .selectAll("circle").data(data).enter().append('circle')
     .attr('cx', function(d,i){ return x(parseInt(d.CorruptionPerceptionIndex)); })
-    .attr('cy', function(d,i){ return y(parseInt(d.Score)); })
+    .attr('cy', function(d,i){ return y(parseFloat(d.Score)); })
     .attr('r', 2);
 
     d3.select("svg").append("g")
