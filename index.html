@@ -6,7 +6,7 @@
 </svg>
 <script>
 async function init() {
-    const data = await d3.csv('https://github.com/gputcha2/CS416FinalProject/blob/main/FinalProjectData.csv');
+    const data = await d3.csv('https://gputcha2.github.io/CS416FinalProject/FinalProjectData.csv');
     x = d3.scaleLinear().domain([0,100]).range([0,200]);
     y = d3.scaleLinear().domain([0,10]).range([200,0]);
     d3.select("svg")
