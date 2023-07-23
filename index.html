@@ -7,6 +7,7 @@
 <script>
 async function init() {
     const data = await d3.csv('https://gputcha2.github.io/CS416FinalProject/FinalProjectData.csv');
+    console.log(data);
     x = d3.scaleLinear().domain([0,100]).range([0,200]);
     y = d3.scaleLinear().domain([0,10]).range([200,0]);
     d3.select("svg")
@@ -14,8 +15,8 @@ async function init() {
     .attr("transform","translate(50,50)")
     .selectAll("circle").data(data).enter().append('circle')
     .attr('cx', function(d,i){ return x(parseInt(d.CorruptionPerceptionIndex)); })
-    .attr('cy', function(d,i){ return y(parseFloat(d.Score)); })
-    .attr('r', function(d,i){ return 2 });
+    .attr('cy', function(d,i){ return y(parseInt(d.Score)); })
+    .attr('r', 2);
 
     d3.select("svg").append("g")
     .attr("transform","translate(50,50)")
