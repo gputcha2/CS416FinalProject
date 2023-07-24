@@ -4,7 +4,7 @@ async function init() {
     x = d3.scaleLinear().domain([0,100]).range([0,600]);
     y = d3.scaleLinear().domain([2,9]).range([600,0]);
     var tooltip = d3.select("#tooltip");
-    const colorScale = d3.scaleOrdinal().domain(['High income', 'Upper middle income', 'Lower middle income', 'Low income']).range(['green', 'yellow', 'orange', 'red']);
+    const colorScale = d3.scaleOrdinal().domain(['Asia', 'Africa', 'North America', 'South America', 'Australia/Oceana', 'Europe']).range(['green', 'yellow', 'red', 'orange', 'blue', 'purple']);
     var svg = d3.select("svg")
                 .append("g")
                 .attr("transform","translate(50,50)");
@@ -35,7 +35,7 @@ async function init() {
     .attr('cx', function(d,i){ return x(parseInt(d.CorruptionPerceptionIndex)); })
     .attr('cy', function(d,i){ return y(parseFloat(d.Score)); })
     .attr('r', 4)
-    .attr('fill', d => colorScale(d.IncomeGroup))
+    .attr('fill', d => colorScale(d.Continent))
     .on("mouseover", function(d,i) {
             tooltip.style("opacity", 1)
             .style("left", (d3.event.pageX + 10)+"px")

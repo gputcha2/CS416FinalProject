@@ -1,154 +1,154 @@
-﻿Code,Country,IncomeGroup,Year,CorruptionPerceptionIndex,GDPpercapita,GdpUsd,LifeExpectancy,Overallrank,Score
-AFG,Afghanistan,Low income,2018,16,0.332,18418848300,63.081,145,3.632
-AGO,Angola,Lower middle income,2018,19,0.73,77792944472,62.144,142,3.795
-ALB,Albania,Upper middle income,2018,36,0.916,15156432310,79.184,112,4.586
-ARE,United Arab Emirates,High income,2018,70,2.096,4.27E+11,79.627,20,6.774
-ARG,Argentina,Upper middle income,2018,40,1.073,5.25E+11,76.999,29,6.388
-ARM,Armenia,Upper middle income,2018,35,0.816,12457941907,75.064,129,4.321
-AUS,Australia,High income,2018,77,1.34,1.43E+12,82.74878049,10,7.272
-AUT,Austria,High income,2018,76,1.341,4.55E+11,81.69268293,12,7.139
-AZE,Azerbaijan,Upper middle income,2018,25,1.024,47112941176,72.76,87,5.201
-BDI,Burundi,Low income,2018,17,0.091,2660123598,61.688,156,2.905
-BEL,Belgium,High income,2018,75,1.324,5.43E+11,81.59512195,16,6.927
-BEN,Benin,Lower middle income,2018,40,0.378,14262408080,60.14,136,4.141
-BFA,Burkina Faso,Low income,2018,41,0.314,15890065020,60.047,121,4.424
-BGD,Bangladesh,Lower middle income,2018,26,0.532,3.21E+11,72.567,115,4.5
-BGR,Bulgaria,Upper middle income,2018,42,1.054,66363537115,74.96341463,100,4.933
-BHR,Bahrain,High income,2018,36,1.338,37802005319,79.857,43,6.105
-BIH,Bosnia and Herzegovina,Upper middle income,2018,38,0.915,20183510863,77.093,93,5.129
-BLR,Belarus,Upper middle income,2018,44,1.039,60031262269,74.17560976,73,5.483
-,Belize,Upper middle income,,29,0.807,2315000000,73.703,49,5.956
-BOL,Bolivia,Lower middle income,2018,29,0.751,40287647930,67.748,62,5.752
-BRA,Brazil,Upper middle income,2018,35,0.986,1.92E+12,75.109,28,6.419
-BTN,Bhutan,Lower middle income,2018,68,0.796,2446866405,71.129,97,5.082
-BWA,Botswana,Upper middle income,2018,61,1.017,17031901441,65.422,146,3.59
-CAF,Central African Republic,Low income,2018,26,0.024,2220978978,54.369,155,3.083
-CAN,Canada,High income,2018,81,1.33,1.73E+12,81.84390244,7,7.328
-CHE,Switzerland,High income,2018,85,1.42,7.26E+11,83.75365854,5,7.487
-CHL,Chile,High income,2018,67,1.131,2.95E+11,80.133,25,6.476
-CHN,China,Upper middle income,2018,39,0.989,1.39E+13,77.744,86,5.246
-CIV,Ivory Coast,Lower middle income,2018,35,0.541,58011466451,58.849,107,4.671
-CMR,Cameroon,Lower middle income,2018,25,0.535,39973839065,61.18,99,4.975
-COD,Congo (Kinshasa),Low income,2018,20,0.069,47568210069,59.942,132,4.245
-COG,Congo (Brazzaville),Lower middle income,2018,19,0.682,13670036996,64.053,114,4.559
-COL,Colombia,Upper middle income,2018,36,0.96,3.34E+11,76.748,37,6.26
-CRI,Costa Rica,Upper middle income,2018,56,1.01,62420165100,79.484,13,7.072
-CYP,Cyprus,High income,2018,59,1.229,25596474965,81.382,61,5.762
-CZE,Czech Republic,High income,2018,59,1.233,2.49E+11,79.02926829,21,6.711
-DEU,Germany,High income,2018,80,1.34,3.97E+12,80.89268293,15,6.965
-DNK,Denmark,High income,2018,88,1.351,3.57E+11,80.95365854,3,7.555
-DOM,Dominican Republic,Upper middle income,2018,30,0.982,85555378043,73.232,83,5.302
-DZA,Algeria,Lower middle income,2018,35,0.979,1.75E+11,76.066,84,5.295
-ECU,Ecuador,Upper middle income,2018,34,0.889,1.08E+11,77.094,48,5.973
-EGY,Egypt,Lower middle income,2018,35,0.885,2.50E+11,71.367,122,4.419
-ESP,Spain,High income,2018,58,1.251,1.42E+12,83.43170732,36,6.31
-EST,Estonia,High income,2018,73,1.2,30624720196,78.24390244,63,5.739
-ETH,Ethiopia,Low income,2018,34,0.308,84269348327,65.412,127,4.35
-FIN,Finland,High income,2018,85,1.305,2.76E+11,81.73414634,1,7.632
-FRA,France,High income,2018,72,1.293,2.79E+12,82.67560976,23,6.489
-GAB,Gabon,Upper middle income,2018,31,1.036,16867326390,66.306,103,4.758
-GBR,United Kingdom,High income,2018,80,1.244,2.88E+12,81.25609756,11,7.19
-GEO,Georgia,Upper middle income,2018,58,0.853,17596922470,73.341,128,4.34
-GHA,Ghana,Lower middle income,2018,41,0.592,67299280680,64.122,108,4.657
-GIN,Guinea,Low income,2018,28,0.344,11857030337,59.349,140,3.964
-GRC,Greece,High income,2018,45,1.154,2.12E+11,81.78780488,79,5.358
-GTM,Guatemala,Upper middle income,2018,27,0.781,73328024537,72.726,30,6.382
-HKG,Hong Kong,High income,2018,76,1.405,3.62E+11,84.93414634,76,5.43
-HND,Honduras,Lower middle income,2018,29,0.62,24067778954,72.814,72,5.504
-HRV,Croatia,High income,2018,48,1.115,62316840750,78.07073171,82,5.321
-HTI,Haiti,Lower middle income,2018,20,0.315,16455034353,64.019,148,3.582
-HUN,Hungary,High income,2018,46,1.171,1.61E+11,76.06585366,69,5.62
-IDN,Indonesia,Lower middle income,2018,38,0.899,1.04E+12,70.338,96,5.093
-IND,India,Lower middle income,2018,41,0.721,2.70E+12,70.71,133,4.19
-IRL,Ireland,High income,2018,73,1.448,3.86E+11,82.20487805,14,6.977
-IRN,Iran,Lower middle income,2018,28,1.059,3.32E+11,76.195,106,4.707
-IRQ,Iraq,Upper middle income,2018,18,1.01,2.27E+11,71.514,117,4.456
-ISL,Iceland,High income,2018,76,1.343,26264127687,82.86097561,4,7.495
-ISR,Israel,High income,2018,61,1.301,3.77E+11,82.80243902,19,6.814
-ITA,Italy,High income,2018,52,1.264,2.09E+12,83.34634146,47,6
-JAM,Jamaica,Upper middle income,2018,44,0.819,15730793853,71.793,56,5.89
-JOR,Jordan,Upper middle income,2018,49,0.822,43370860549,75.774,90,5.161
-JPN,Japan,High income,2018,73,1.294,5.04E+12,84.21097561,54,5.915
-KAZ,Kazakhstan,Upper middle income,2018,31,1.143,1.79E+11,73.15,60,5.79
-KEN,Kenya,Lower middle income,2018,27,0.493,92202956321,62.676,124,4.41
-KGZ,Kyrgyzstan,Lower middle income,2018,29,0.53,8271108638,71.4,92,5.131
-KHM,Cambodia,Lower middle income,2018,20,0.549,24571753583,70.561,120,4.433
-KOR,South Korea,High income,2018,57,1.266,1.72E+12,82.62682927,57,5.875
-KWT,Kuwait,High income,2018,41,1.474,1.38E+11,79.722,45,6.083
-LAO,Laos,Lower middle income,2018,29,0.72,18141651381,67.634,110,4.623
-LBN,Lebanon,Lower middle income,2018,28,0.965,54901519156,79.729,80,5.358
-LBR,Liberia,Low income,2018,32,0.076,3422754800,60.853,149,3.495
-LBY,Libya,Upper middle income,2018,17,0.985,76684175824,72.794,70,5.566
-LKA,Sri Lanka,Lower middle income,2018,38,0.918,94493847352,75.748,116,4.471
-LSO,Lesotho,Lower middle income,2018,41,0.472,2553495916,53.733,141,3.808
-LTU,Lithuania,High income,2018,59,1.197,53751411409,75.6804878,50,5.952
-LUX,Luxembourg,High income,2018,81,1.576,71000359760,82.29512195,17,6.91
-LVA,Latvia,High income,2018,58,1.148,34429023435,74.78292683,53,5.933
-MAR,Morocco,Lower middle income,2018,43,0.779,1.27E+11,73.986,85,5.254
-MDA,Moldova,Upper middle income,2018,33,0.657,11457443185,70.492,67,5.64
-MDG,Madagascar,Low income,2018,25,0.262,13760033097,65.27,143,3.774
-MEX,Mexico,Upper middle income,2018,28,1.038,1.22E+12,74.015,24,6.488
-MKD,Macedonia,Upper middle income,2018,37,0.959,12683070061,76.64878049,89,5.185
-MLI,Mali,Low income,2018,32,0.37,17070866299,59.393,118,4.447
-MLT,Malta,High income,2018,54,1.27,15298771847,82.44878049,22,6.627
-MMR,Myanmar,Lower middle income,2018,29,0.682,67144725831,66.465,130,4.308
-MNE,Montenegro,Upper middle income,2018,45,1.017,5506766651,76.84146341,81,5.347
-MNG,Mongolia,Lower middle income,2018,37,0.914,13178094459,71.199,94,5.125
-MOZ,Mozambique,Low income,2018,23,0.198,14845402474,60.526,123,4.417
-MRT,Mauritania,Lower middle income,2018,27,0.557,7473550557,65.31,126,4.356
-MUS,Mauritius,Upper middle income,2018,51,1.09,14735695931,74.41634146,55,5.891
-MWI,Malawi,Low income,2018,32,0.186,9880675786,63.276,147,3.587
-MYS,Malaysia,Upper middle income,2018,47,1.161,3.59E+11,75.644,35,6.322
-NAM,Namibia,Upper middle income,2018,53,0.874,13682062251,62.586,119,4.441
-NER,Niger,Low income,2018,34,0.131,12808660528,62.454,134,4.166
-NGA,Nigeria,Lower middle income,2018,27,0.689,4.22E+11,52.554,91,5.155
-NIC,Nicaragua,Lower middle income,2018,25,0.668,13025239912,73.85,41,6.141
-NLD,Netherlands,High income,2018,82,1.361,9.14E+11,81.81219512,6,7.441
-NOR,Norway,High income,2018,84,1.456,4.37E+11,82.75853659,2,7.594
-NPL,Nepal,Lower middle income,2018,31,0.425,33111525872,68.979,101,4.88
-NZL,New Zealand,High income,2018,87,1.268,2.12E+11,81.70731707,8,7.324
-PAK,Pakistan,Lower middle income,2018,33,0.652,3.56E+11,66.482,75,5.472
-PAN,Panama,High income,2018,37,1.112,64929400000,77.863,27,6.43
-PER,Peru,Upper middle income,2018,35,0.934,2.23E+11,76.009,65,5.663
-PHL,Philippines,Lower middle income,2018,36,0.775,3.47E+11,71.689,71,5.524
-POL,Poland,High income,2018,60,1.176,5.89E+11,77.60243902,42,6.123
-PRT,Portugal,High income,2018,64,1.188,2.42E+11,81.32439024,77,5.41
-PRY,Paraguay,Upper middle income,2018,29,0.835,40225448341,73.568,64,5.681
-QAT,Qatar,High income,2018,62,1.649,1.83E+11,80.898,32,6.374
-ROU,Romania,High income,2018,47,1.116,2.43E+11,75.35853659,52,5.945
-RUS,Russia,Upper middle income,2018,28,1.151,1.66E+12,72.66219512,59,5.81
-RWA,Rwanda,Low income,2018,56,0.332,9642440646,66.251,151,3.408
-SAU,Saudi Arabia,High income,2018,49,1.379,8.17E+11,77.212,33,6.371
-SDN,Sudan,Low income,2018,16,0.605,32333780383,65.681,137,4.139
-SEN,Senegal,Lower middle income,2018,45,0.429,23116897847,68.097,109,4.631
-SGP,Singapore,High income,2018,85,1.529,3.77E+11,83.29756098,34,6.343
-SLE,Sierra Leone,Low income,2018,30,0.256,4085114794,59.796,113,4.571
-SLV,El Salvador,Lower middle income,2018,35,0.806,26020850000,72.555,40,6.167
-SOM,Somalia,Low income,2018,10,0,5856000006,56.375,98,4.982
-SRB,Serbia,Upper middle income,2018,39,0.975,50640650221,75.8902439,78,5.398
-SSD,South Sudan,Low income,2018,13,0.337,3118000000,55.95,154,3.254
-SVK,Slovakia,High income,2018,50,1.21,1.06E+11,77.26585366,39,6.173
-SVN,Slovenia,High income,2018,60,1.219,54177882426,81.37804878,51,5.948
-SWE,Sweden,High income,2018,85,1.355,5.55E+11,82.55853659,9,7.314
-SYR,Syria,Low income,2018,13,0.689,21351730539,70.145,150,3.462
-TCD,Chad,Low income,2018,19,0.358,11239167048,52.825,131,4.301
-TGO,Togo,Low income,2018,30,0.259,7112200725,60.244,139,3.999
-THA,Thailand,Upper middle income,2018,36,1.016,5.07E+11,78.662,46,6.072
-TJK,Tajikistan,Lower middle income,2018,25,0.474,7765014424,70.353,88,5.199
-TKM,Turkmenistan,Upper middle income,2018,20,1.016,40765428571,68.796,68,5.636
-TUN,Tunisia,Lower middle income,2018,43,0.9,42685972269,75.95,111,4.592
-TUR,Turkey,Upper middle income,2018,41,1.148,7.78E+11,77.563,74,5.483
-TZA,Tanzania,Lower middle income,2018,36,0.455,57003685912,66.535,153,3.303
-UGA,Uganda,Low income,2018,26,0.322,32927025573,62.714,135,4.161
-UKR,Ukraine,Lower middle income,2018,32,0.793,1.31E+11,71.58268293,138,4.103
-URY,Uruguay,High income,2018,70,1.093,64515038268,77.611,31,6.379
-USA,United States,High income,2018,71,1.398,2.05E+13,78.63902439,18,6.886
-UZB,Uzbekistan,Lower middle income,2018,23,0.719,52633143808,71.149,44,6.096
-VEN,Venezuela,Lower middle income,2018,18,0.996,1655000000,71.979,102,4.806
-VNM,Vietnam,Lower middle income,2018,33,0.715,3.10E+11,73.976,95,5.103
-OWID_KOS,Kosovo,Upper middle income,2018,37,0.855,7878508503,78.696,66,5.662
-YEM,Yemen,Low income,2018,14,0.442,21606161066,64.575,152,3.355
-ZAF,South Africa,Upper middle income,2018,43,0.94,4.04E+11,65.674,105,4.724
-ZMB,Zambia,Low income,2018,35,0.562,26311590297,62.342,125,4.377
-ZWE,Zimbabwe,Lower middle income,2018,22,0.357,34156069918,61.414,144,3.692
-TWN,Taiwan,High income,2018,63,1.365,6.092E+11,80.19,26,6.441
+﻿Code,Country,IncomeGroup,Year,CorruptionPerceptionIndex,GDPpercapita,GdpUsd,LifeExpectancy,Overallrank,Score,Continent
+AFG,Afghanistan,Low income,2018,16,0.332,18418848300,63.081,145,3.632,Asia
+AGO,Angola,Lower middle income,2018,19,0.73,77792944472,62.144,142,3.795,Africa
+ALB,Albania,Upper middle income,2018,36,0.916,15156432310,79.184,112,4.586,Europe
+ARE,United Arab Emirates,High income,2018,70,2.096,4.27E+11,79.627,20,6.774,Asia
+ARG,Argentina,Upper middle income,2018,40,1.073,5.25E+11,76.999,29,6.388,South America
+ARM,Armenia,Upper middle income,2018,35,0.816,12457941907,75.064,129,4.321,Asia
+AUS,Australia,High income,2018,77,1.34,1.43E+12,82.74878049,10,7.272,Oceania
+AUT,Austria,High income,2018,76,1.341,4.55E+11,81.69268293,12,7.139,Europe
+AZE,Azerbaijan,Upper middle income,2018,25,1.024,47112941176,72.76,87,5.201,Asia
+BDI,Burundi,Low income,2018,17,0.091,2660123598,61.688,156,2.905,Africa
+BEL,Belgium,High income,2018,75,1.324,5.43E+11,81.59512195,16,6.927,Europe
+BEN,Benin,Lower middle income,2018,40,0.378,14262408080,60.14,136,4.141,Africa
+BFA,Burkina Faso,Low income,2018,41,0.314,15890065020,60.047,121,4.424,Africa
+BGD,Bangladesh,Lower middle income,2018,26,0.532,3.21E+11,72.567,115,4.5,Asia
+BGR,Bulgaria,Upper middle income,2018,42,1.054,66363537115,74.96341463,100,4.933,Europe
+BHR,Bahrain,High income,2018,36,1.338,37802005319,79.857,43,6.105,Asia
+BIH,Bosnia and Herzegovina,Upper middle income,2018,38,0.915,20183510863,77.093,93,5.129,Europe
+BLR,Belarus,Upper middle income,2018,44,1.039,60031262269,74.17560976,73,5.483,Europe
+,Belize,Upper middle income,,29,0.807,2315000000,73.703,49,5.956,North America
+BOL,Bolivia,Lower middle income,2018,29,0.751,40287647930,67.748,62,5.752,South America
+BRA,Brazil,Upper middle income,2018,35,0.986,1.92E+12,75.109,28,6.419,South America
+BTN,Bhutan,Lower middle income,2018,68,0.796,2446866405,71.129,97,5.082,Asia
+BWA,Botswana,Upper middle income,2018,61,1.017,17031901441,65.422,146,3.59,Africa
+CAF,Central African Republic,Low income,2018,26,0.024,2220978978,54.369,155,3.083,Africa
+CAN,Canada,High income,2018,81,1.33,1.73E+12,81.84390244,7,7.328,North America
+CHE,Switzerland,High income,2018,85,1.42,7.26E+11,83.75365854,5,7.487,Europe
+CHL,Chile,High income,2018,67,1.131,2.95E+11,80.133,25,6.476,South America
+CHN,China,Upper middle income,2018,39,0.989,1.39E+13,77.744,86,5.246,Asia
+CIV,Ivory Coast,Lower middle income,2018,35,0.541,58011466451,58.849,107,4.671,Africa
+CMR,Cameroon,Lower middle income,2018,25,0.535,39973839065,61.18,99,4.975,Africa
+COD,Congo (Kinshasa),Low income,2018,20,0.069,47568210069,59.942,132,4.245,Africa
+COG,Congo (Brazzaville),Lower middle income,2018,19,0.682,13670036996,64.053,114,4.559,Africa
+COL,Colombia,Upper middle income,2018,36,0.96,3.34E+11,76.748,37,6.26,South America
+CRI,Costa Rica,Upper middle income,2018,56,1.01,62420165100,79.484,13,7.072,North America
+CYP,Cyprus,High income,2018,59,1.229,25596474965,81.382,61,5.762,Asia
+CZE,Czech Republic,High income,2018,59,1.233,2.49E+11,79.02926829,21,6.711,Europe
+DEU,Germany,High income,2018,80,1.34,3.97E+12,80.89268293,15,6.965,Europe
+DNK,Denmark,High income,2018,88,1.351,3.57E+11,80.95365854,3,7.555,Europe
+DOM,Dominican Republic,Upper middle income,2018,30,0.982,85555378043,73.232,83,5.302,North America
+DZA,Algeria,Lower middle income,2018,35,0.979,1.75E+11,76.066,84,5.295,Africa
+ECU,Ecuador,Upper middle income,2018,34,0.889,1.08E+11,77.094,48,5.973,South America
+EGY,Egypt,Lower middle income,2018,35,0.885,2.50E+11,71.367,122,4.419,Africa
+ESP,Spain,High income,2018,58,1.251,1.42E+12,83.43170732,36,6.31,Europe
+EST,Estonia,High income,2018,73,1.2,30624720196,78.24390244,63,5.739,Europe
+ETH,Ethiopia,Low income,2018,34,0.308,84269348327,65.412,127,4.35,Africa
+FIN,Finland,High income,2018,85,1.305,2.76E+11,81.73414634,1,7.632,Europe
+FRA,France,High income,2018,72,1.293,2.79E+12,82.67560976,23,6.489,Europe
+GAB,Gabon,Upper middle income,2018,31,1.036,16867326390,66.306,103,4.758,Africa
+GBR,United Kingdom,High income,2018,80,1.244,2.88E+12,81.25609756,11,7.19,Europe
+GEO,Georgia,Upper middle income,2018,58,0.853,17596922470,73.341,128,4.34,Asia
+GHA,Ghana,Lower middle income,2018,41,0.592,67299280680,64.122,108,4.657,Africa
+GIN,Guinea,Low income,2018,28,0.344,11857030337,59.349,140,3.964,Africa
+GRC,Greece,High income,2018,45,1.154,2.12E+11,81.78780488,79,5.358,Europe
+GTM,Guatemala,Upper middle income,2018,27,0.781,73328024537,72.726,30,6.382,North America
+HKG,Hong Kong,High income,2018,76,1.405,3.62E+11,84.93414634,76,5.43,Asia
+HND,Honduras,Lower middle income,2018,29,0.62,24067778954,72.814,72,5.504,North America
+HRV,Croatia,High income,2018,48,1.115,62316840750,78.07073171,82,5.321,Europe
+HTI,Haiti,Lower middle income,2018,20,0.315,16455034353,64.019,148,3.582,North America
+HUN,Hungary,High income,2018,46,1.171,1.61E+11,76.06585366,69,5.62,Europe
+IDN,Indonesia,Lower middle income,2018,38,0.899,1.04E+12,70.338,96,5.093,Asia
+IND,India,Lower middle income,2018,41,0.721,2.70E+12,70.71,133,4.19,Asia
+IRL,Ireland,High income,2018,73,1.448,3.86E+11,82.20487805,14,6.977,Europe
+IRN,Iran,Lower middle income,2018,28,1.059,3.32E+11,76.195,106,4.707,Asia
+IRQ,Iraq,Upper middle income,2018,18,1.01,2.27E+11,71.514,117,4.456,Asia
+ISL,Iceland,High income,2018,76,1.343,26264127687,82.86097561,4,7.495,Europe
+ISR,Israel,High income,2018,61,1.301,3.77E+11,82.80243902,19,6.814,Asia
+ITA,Italy,High income,2018,52,1.264,2.09E+12,83.34634146,47,6,Europe
+JAM,Jamaica,Upper middle income,2018,44,0.819,15730793853,71.793,56,5.89,North America
+JOR,Jordan,Upper middle income,2018,49,0.822,43370860549,75.774,90,5.161,Asia
+JPN,Japan,High income,2018,73,1.294,5.04E+12,84.21097561,54,5.915,Asia
+KAZ,Kazakhstan,Upper middle income,2018,31,1.143,1.79E+11,73.15,60,5.79,Asia
+KEN,Kenya,Lower middle income,2018,27,0.493,92202956321,62.676,124,4.41,Africa
+KGZ,Kyrgyzstan,Lower middle income,2018,29,0.53,8271108638,71.4,92,5.131,Asia
+KHM,Cambodia,Lower middle income,2018,20,0.549,24571753583,70.561,120,4.433,Asia
+KOR,South Korea,High income,2018,57,1.266,1.72E+12,82.62682927,57,5.875,Asia
+KWT,Kuwait,High income,2018,41,1.474,1.38E+11,79.722,45,6.083,Asia
+LAO,Laos,Lower middle income,2018,29,0.72,18141651381,67.634,110,4.623,Asia
+LBN,Lebanon,Lower middle income,2018,28,0.965,54901519156,79.729,80,5.358,Asia
+LBR,Liberia,Low income,2018,32,0.076,3422754800,60.853,149,3.495,Africa
+LBY,Libya,Upper middle income,2018,17,0.985,76684175824,72.794,70,5.566,Africa
+LKA,Sri Lanka,Lower middle income,2018,38,0.918,94493847352,75.748,116,4.471,Asia
+LSO,Lesotho,Lower middle income,2018,41,0.472,2553495916,53.733,141,3.808,Africa
+LTU,Lithuania,High income,2018,59,1.197,53751411409,75.6804878,50,5.952,Europe
+LUX,Luxembourg,High income,2018,81,1.576,71000359760,82.29512195,17,6.91,Europe
+LVA,Latvia,High income,2018,58,1.148,34429023435,74.78292683,53,5.933,Europe
+MAR,Morocco,Lower middle income,2018,43,0.779,1.27E+11,73.986,85,5.254,Africa
+MDA,Moldova,Upper middle income,2018,33,0.657,11457443185,70.492,67,5.64,Europe
+MDG,Madagascar,Low income,2018,25,0.262,13760033097,65.27,143,3.774,Africa
+MEX,Mexico,Upper middle income,2018,28,1.038,1.22E+12,74.015,24,6.488,North America
+MKD,Macedonia,Upper middle income,2018,37,0.959,12683070061,76.64878049,89,5.185,Europe
+MLI,Mali,Low income,2018,32,0.37,17070866299,59.393,118,4.447,Africa
+MLT,Malta,High income,2018,54,1.27,15298771847,82.44878049,22,6.627,Europe
+MMR,Myanmar,Lower middle income,2018,29,0.682,67144725831,66.465,130,4.308,Asia
+MNE,Montenegro,Upper middle income,2018,45,1.017,5506766651,76.84146341,81,5.347,Europe
+MNG,Mongolia,Lower middle income,2018,37,0.914,13178094459,71.199,94,5.125,Asia
+MOZ,Mozambique,Low income,2018,23,0.198,14845402474,60.526,123,4.417,Africa
+MRT,Mauritania,Lower middle income,2018,27,0.557,7473550557,65.31,126,4.356,Africa
+MUS,Mauritius,Upper middle income,2018,51,1.09,14735695931,74.41634146,55,5.891,Africa
+MWI,Malawi,Low income,2018,32,0.186,9880675786,63.276,147,3.587,Africa
+MYS,Malaysia,Upper middle income,2018,47,1.161,3.59E+11,75.644,35,6.322,Asia
+NAM,Namibia,Upper middle income,2018,53,0.874,13682062251,62.586,119,4.441,Africa
+NER,Niger,Low income,2018,34,0.131,12808660528,62.454,134,4.166,Africa
+NGA,Nigeria,Lower middle income,2018,27,0.689,4.22E+11,52.554,91,5.155,Africa
+NIC,Nicaragua,Lower middle income,2018,25,0.668,13025239912,73.85,41,6.141,North America
+NLD,Netherlands,High income,2018,82,1.361,9.14E+11,81.81219512,6,7.441,Europe
+NOR,Norway,High income,2018,84,1.456,4.37E+11,82.75853659,2,7.594,Europe
+NPL,Nepal,Lower middle income,2018,31,0.425,33111525872,68.979,101,4.88,Asia
+NZL,New Zealand,High income,2018,87,1.268,2.12E+11,81.70731707,8,7.324,Oceania
+PAK,Pakistan,Lower middle income,2018,33,0.652,3.56E+11,66.482,75,5.472,Asia
+PAN,Panama,High income,2018,37,1.112,64929400000,77.863,27,6.43,North America
+PER,Peru,Upper middle income,2018,35,0.934,2.23E+11,76.009,65,5.663,South America
+PHL,Philippines,Lower middle income,2018,36,0.775,3.47E+11,71.689,71,5.524,Asia
+POL,Poland,High income,2018,60,1.176,5.89E+11,77.60243902,42,6.123,Europe
+PRT,Portugal,High income,2018,64,1.188,2.42E+11,81.32439024,77,5.41,Europe
+PRY,Paraguay,Upper middle income,2018,29,0.835,40225448341,73.568,64,5.681,South America
+QAT,Qatar,High income,2018,62,1.649,1.83E+11,80.898,32,6.374,Asia
+ROU,Romania,High income,2018,47,1.116,2.43E+11,75.35853659,52,5.945,Europe
+RUS,Russia,Upper middle income,2018,28,1.151,1.66E+12,72.66219512,59,5.81,Asia
+RWA,Rwanda,Low income,2018,56,0.332,9642440646,66.251,151,3.408,Africa
+SAU,Saudi Arabia,High income,2018,49,1.379,8.17E+11,77.212,33,6.371,Asia
+SDN,Sudan,Low income,2018,16,0.605,32333780383,65.681,137,4.139,Africa
+SEN,Senegal,Lower middle income,2018,45,0.429,23116897847,68.097,109,4.631,Africa
+SGP,Singapore,High income,2018,85,1.529,3.77E+11,83.29756098,34,6.343,Asia
+SLE,Sierra Leone,Low income,2018,30,0.256,4085114794,59.796,113,4.571,Africa
+SLV,El Salvador,Lower middle income,2018,35,0.806,26020850000,72.555,40,6.167,North America
+SOM,Somalia,Low income,2018,10,0,5856000006,56.375,98,4.982,Africa
+SRB,Serbia,Upper middle income,2018,39,0.975,50640650221,75.8902439,78,5.398,Europe
+SSD,South Sudan,Low income,2018,13,0.337,3118000000,55.95,154,3.254,Africa
+SVK,Slovakia,High income,2018,50,1.21,1.06E+11,77.26585366,39,6.173,Europe
+SVN,Slovenia,High income,2018,60,1.219,54177882426,81.37804878,51,5.948,Europe
+SWE,Sweden,High income,2018,85,1.355,5.55E+11,82.55853659,9,7.314,Europe
+SYR,Syria,Low income,2018,13,0.689,21351730539,70.145,150,3.462,Asia
+TCD,Chad,Low income,2018,19,0.358,11239167048,52.825,131,4.301,Africa
+TGO,Togo,Low income,2018,30,0.259,7112200725,60.244,139,3.999,Africa
+THA,Thailand,Upper middle income,2018,36,1.016,5.07E+11,78.662,46,6.072,Asia
+TJK,Tajikistan,Lower middle income,2018,25,0.474,7765014424,70.353,88,5.199,Asia
+TKM,Turkmenistan,Upper middle income,2018,20,1.016,40765428571,68.796,68,5.636,Asia
+TUN,Tunisia,Lower middle income,2018,43,0.9,42685972269,75.95,111,4.592,Africa
+TUR,Turkey,Upper middle income,2018,41,1.148,7.78E+11,77.563,74,5.483,Asia
+TZA,Tanzania,Lower middle income,2018,36,0.455,57003685912,66.535,153,3.303,Africa
+UGA,Uganda,Low income,2018,26,0.322,32927025573,62.714,135,4.161,Africa
+UKR,Ukraine,Lower middle income,2018,32,0.793,1.31E+11,71.58268293,138,4.103,Europe
+URY,Uruguay,High income,2018,70,1.093,64515038268,77.611,31,6.379,South America
+USA,United States,High income,2018,71,1.398,2.05E+13,78.63902439,18,6.886,North America
+UZB,Uzbekistan,Lower middle income,2018,23,0.719,52633143808,71.149,44,6.096,Asia
+VEN,Venezuela,Lower middle income,2018,18,0.996,1655000000,71.979,102,4.806,South America
+VNM,Vietnam,Lower middle income,2018,33,0.715,3.10E+11,73.976,95,5.103,Asia
+OWID_KOS,Kosovo,Upper middle income,2018,37,0.855,7878508503,78.696,66,5.662,Europe
+YEM,Yemen,Low income,2018,14,0.442,21606161066,64.575,152,3.355,Asia
+ZAF,South Africa,Upper middle income,2018,43,0.94,4.04E+11,65.674,105,4.724,Africa
+ZMB,Zambia,Low income,2018,35,0.562,26311590297,62.342,125,4.377,Africa
+ZWE,Zimbabwe,Lower middle income,2018,22,0.357,34156069918,61.414,144,3.692,Africa
+TWN,Taiwan,High income,2018,63,1.365,6.092E+11,80.19,26,6.441,Asia
