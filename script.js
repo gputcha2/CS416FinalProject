@@ -20,11 +20,11 @@ async function init() {
         
         const annotations = [{
             note: {
-                label: "Tend tohave higher levels of corruption",
+                label: "Tend to have higher levels of corruption and as a result - we can see lower happiness levels",
                 bgPadding: 20,
                 title: "African Countries"
             },
-            className: "show-bg",
+            className: "annotation-text",
             x: x(26),
             y: y(4), 
             dy: 25,
@@ -37,16 +37,16 @@ async function init() {
                 bgPadding: 20,
                 title: "Correlation"
             },
-            className: "show-bg",
-            x: x(55),
-            y: y(5.398), 
+            className: "annotation-text",
+            x: x(57),
+            y: y(5.7), 
             dy: 160,
             dx: -75,
             subject: { radius: 50, radiusPadding: 10 }
         }
     ];
     const makeAnnotations = d3.annotation()
-    .editMode(true)
+    .editMode(false)
     .type(type)
     .annotations(annotations);
 
@@ -65,10 +65,16 @@ async function init() {
     .attr("y2", 0);
     var trendLine = svg.append("line")
     .attr("class", "trend-line")
-    .attr("x1", x(15))
-    .attr("y1", y(3.1))
-    .attr("x2", x(88))
-    .attr("y2", y(7.5));
+    .attr("x1", x(91))
+    .attr("y1", y(7.9))
+    .attr("x2", x(91))
+    .attr("y2", y(7.9))
+    .transition().duration(3000).delay(1000)
+    .attr("class", "trend-line")
+    .attr("x1", x(9))
+    .attr("y1", y(3.3))
+    .attr("x2", x(91))
+    .attr("y2", y(7.9));
     svg.append("text")
     .attr("x", 300)
     .attr("y", 650)
@@ -132,7 +138,10 @@ async function init() {
     d3.select("svg")
     .append("g")
     .attr("class", "annotation-group")
-    .call(makeAnnotations);
+    .call(makeAnnotations)
+    .style("opacity", 0)
+    .transition().duration(3000).delay(1200)
+    .style("opacity", 1);
 
     d3.select("svg").append("g")
     .attr("transform","translate(50,50)")

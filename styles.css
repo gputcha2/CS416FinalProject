@@ -9,6 +9,9 @@ h1, p {
   }
 svg {
     background-color: gainsboro;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    margin-top: 0%;
 }
 circle {stroke: black;}
 #tooltip {
@@ -20,6 +23,8 @@ circle {stroke: black;}
     background-color: lightblue;
     color: black;
     border: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
 }
 .guide-line {
     stroke: blue;
@@ -30,3 +35,13 @@ circle {stroke: black;}
     stroke: red;
     stroke-width: 2;
     }
+.annotation-text text {
+        fill: #535454;
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+    }
+#info {
+    position: absolute;
+    top: 120px;
+    right: 550px;
+}
