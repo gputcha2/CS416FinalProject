@@ -26,3 +26,7 @@ circle {stroke: black;}
     stroke-dasharray: 4;
     opacity: 0;
       }
+.trend-line {
+    stroke: red;
+    stroke-width: 2;
+    }
