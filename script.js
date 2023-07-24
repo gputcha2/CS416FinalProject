@@ -20,6 +20,17 @@ async function init() {
     .attr("y1", 0)
     .attr("x2", 0)
     .attr("y2", 0);
+    svg.append("text")
+    .attr("x", 300)
+    .attr("y", 650)
+    .attr("text-anchor", "middle")
+    .text("Corruption Perception Index");
+    svg.append("text")
+    .attr("x", -300)
+    .attr("y", -30)
+    .attr("transform", "rotate(-90)")
+    .attr("text-anchor", "middle")
+    .text("Happiness Score");
     svg.selectAll("circle").data(data).enter().append('circle')
     .attr('cx', function(d,i){ return x(parseInt(d.CorruptionPerceptionIndex)); })
     .attr('cy', function(d,i){ return y(parseFloat(d.Score)); })
@@ -46,6 +57,27 @@ async function init() {
         verticalLine.style("opacity", 0);
         horizontalLine.style("opacity", 0); 
     });
+
+    const legend = svg.append("g")
+        .attr("transform", "translate(650, 50)");
+
+    const legendItems = legend.selectAll(".legend-item")
+        .data(colorScale.domain())
+        .enter()
+        .append("g")
+        .attr("class", "legend-item")
+        .attr("transform", (d, i) => `translate(0, ${i * 20})`);
+
+    legendItems.append("rect")
+        .attr("width", 15)
+        .attr("height", 15)
+        .attr("fill", colorScale);
+
+    legendItems.append("text")
+        .attr("x", 20)
+        .attr("y", 7.5)
+        .attr("dy", "0.35em")
+        .text(d => d);
 
     d3.select("svg").append("g")
     .attr("transform","translate(50,50)")
