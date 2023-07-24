@@ -4,7 +4,7 @@ async function init() {
     x = d3.scaleLinear().domain([0,100]).range([0,600]);
     y = d3.scaleLinear().domain([2,9]).range([600,0]);
     var tooltip = d3.select("#tooltip");
-    const colorScale = d3.scaleOrdinal().domain(['Asia', 'Africa', 'North America', 'South America', 'Australia/Oceana', 'Europe']).range(['green', 'yellow', 'red', 'orange', 'blue', 'purple']);
+    const colorScale = d3.scaleOrdinal().domain(['Asia', 'Africa', 'North America', 'South America', 'Australia/Oceania', 'Europe']).range(['green', 'yellow', 'red', 'orange', 'blue', 'purple']);
     var svg = d3.select("svg")
                 .append("g")
                 .attr("transform","translate(50,50)");
