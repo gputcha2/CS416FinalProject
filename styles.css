@@ -1,1 +1,16 @@
-
+circle {stroke: black;}
+#tooltip {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    background-color: lightblue;
+    color: black;
+    border: 0px;
+}
+.guide-line {
+    stroke: blue;
+    stroke-dasharray: 4;
+    opacity: 0;
+      }
