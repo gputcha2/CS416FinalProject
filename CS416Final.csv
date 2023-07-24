@@ -5,7 +5,7 @@ ALB,Albania,Upper middle income,2018,36,0.916,15156432310,79.184,112,4.586,Europ
 ARE,United Arab Emirates,High income,2018,70,2.096,4.27E+11,79.627,20,6.774,Asia
 ARG,Argentina,Upper middle income,2018,40,1.073,5.25E+11,76.999,29,6.388,South America
 ARM,Armenia,Upper middle income,2018,35,0.816,12457941907,75.064,129,4.321,Asia
-AUS,Australia,High income,2018,77,1.34,1.43E+12,82.74878049,10,7.272,Oceania
+AUS,Australia,High income,2018,77,1.34,1.43E+12,82.74878049,10,7.272,Australia/Oceania
 AUT,Austria,High income,2018,76,1.341,4.55E+11,81.69268293,12,7.139,Europe
 AZE,Azerbaijan,Upper middle income,2018,25,1.024,47112941176,72.76,87,5.201,Asia
 BDI,Burundi,Low income,2018,17,0.091,2660123598,61.688,156,2.905,Africa
@@ -106,7 +106,7 @@ NIC,Nicaragua,Lower middle income,2018,25,0.668,13025239912,73.85,41,6.141,North
 NLD,Netherlands,High income,2018,82,1.361,9.14E+11,81.81219512,6,7.441,Europe
 NOR,Norway,High income,2018,84,1.456,4.37E+11,82.75853659,2,7.594,Europe
 NPL,Nepal,Lower middle income,2018,31,0.425,33111525872,68.979,101,4.88,Asia
-NZL,New Zealand,High income,2018,87,1.268,2.12E+11,81.70731707,8,7.324,Oceania
+NZL,New Zealand,High income,2018,87,1.268,2.12E+11,81.70731707,8,7.324,Australia/Oceania
 PAK,Pakistan,Lower middle income,2018,33,0.652,3.56E+11,66.482,75,5.472,Asia
 PAN,Panama,High income,2018,37,1.112,64929400000,77.863,27,6.43,North America
 PER,Peru,Upper middle income,2018,35,0.934,2.23E+11,76.009,65,5.663,South America
