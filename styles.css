@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-h1, p {
+h1, h3, p {
     font-family: 'Montserrat', sans-serif;
     color: white;
   }
   body {
     background-color: #4b4e52;
+    transform-origin: top left;
+    transform: scale(0.9);
   }
 svg {
     background-color: gainsboro;
@@ -43,5 +45,36 @@ circle {stroke: black;}
 #info {
     position: absolute;
     top: 120px;
-    right: 550px;
+    right: 100px;
+    font-size: medium;
+    width: 500px;
+}
+
+.button-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#home-button {
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    font-size: medium;
 }

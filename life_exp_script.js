@@ -1,7 +1,7 @@
 async function init() {
     const data = await d3.csv('https://gputcha2.github.io/CS416FinalProject/CS416Final.csv');
     console.log(data);
-    var x = d3.scaleLinear().domain([100,0]).range([0,600]);
+    var x = d3.scaleLinear().domain([50,86]).range([0,600]);
     var y = d3.scaleLinear().domain([2,8]).range([600,0]);
     var tooltip = d3.select("#tooltip");
     const colorScale = d3.scaleOrdinal().domain(['Asia', 'Africa', 'North America', 'South America', 'Australia/Oceania', 'Europe']).range(['green', 'yellow', 'red', 'orange', 'blue', 'violet']);
@@ -65,21 +65,21 @@ async function init() {
     .attr("y2", 0);
     var trendLine = svg.append("line")
     .attr("class", "trend-line")
-    .attr("x1", x(91))
-    .attr("y1", y(7.9))
-    .attr("x2", x(91))
-    .attr("y2", y(7.9))
+    .attr("x1", x(50))
+    .attr("y1", y(2.3))
+    .attr("x2", x(50))
+    .attr("y2", y(2.3))
     .transition().duration(3000).delay(300)
     .attr("class", "trend-line")
-    .attr("x1", x(9))
-    .attr("y1", y(3.3))
-    .attr("x2", x(91))
-    .attr("y2", y(7.9));
+    .attr("x1", x(50))
+    .attr("y1", y(2.3))
+    .attr("x2", x(85))
+    .attr("y2", y(7));
     svg.append("text")
     .attr("x", 300)
     .attr("y", 650)
     .attr("text-anchor", "middle")
-    .text("Corruption Perception Index");
+    .text("Life Expectancy");
     svg.append("text")
     .attr("x", -300)
     .attr("y", -30)
@@ -87,21 +87,21 @@ async function init() {
     .attr("text-anchor", "middle")
     .text("Happiness Score");
     var scatter = svg.selectAll("circle").data(data).enter().append('circle')
-    .attr('cx', function(d,i){ return x(parseInt(d.CorruptionPerceptionIndex)); })
+    .attr('cx', function(d,i){ return x(parseInt(d.LifeExpectancy)); })
     .attr('cy', function(d,i){ return y(parseFloat(d.Score)); })
     .attr('r', 4)
     .attr('fill', d => colorScale(d.Continent));
     scatter.on("mouseover", function(d,i) {
         tooltip.style("opacity", 1)
-        .style("left", "400px")
+        .style("left", "200px")
         .style("top", "200px")
-        .html("<b>" + d.Country + "</b><br>" + "Corruption Index - " + d.CorruptionPerceptionIndex + " Happiness Score - " + d.Score);
-        verticalLine.attr("x1", x(parseInt(d.CorruptionPerceptionIndex)))
+        .html("<b>" + d.Country + "</b><br>" + "Life Expectancy - " + d.LifeExpectancy + " Happiness Score - " + d.Score);
+        verticalLine.attr("x1", x(parseInt(d.LifeExpectancy)))
         .attr("y1", y(parseFloat(d.Score)))
-        .attr("x2", x(parseInt(d.CorruptionPerceptionIndex)))
+        .attr("x2", x(parseInt(d.LifeExpectancy)))
         .attr("y2", y.range()[0])
         .style("opacity", 1);
-        horizontalLine.attr("x1", x(parseInt(d.CorruptionPerceptionIndex)))
+        horizontalLine.attr("x1", x(parseInt(d.LifeExpectancy)))
         .attr("y1", y(parseFloat(d.Score)))
         .attr("x2", 0)
         .attr("y2", y(parseFloat(d.Score)))
@@ -152,6 +152,6 @@ async function init() {
     d3.select("svg").append("g")
     .attr("transform","translate(50,650)")
     .call(d3.axisBottom(x)
-    .tickValues([25,50,75,100])
+    .tickValues([50,55,60,65,70,75,80,85])
     .tickFormat(d3.format("~s")));
 }
