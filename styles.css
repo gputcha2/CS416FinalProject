@@ -78,3 +78,33 @@ circle {stroke: black;}
     right: 100px;
     font-size: medium;
 }
+
+.header-fade {
+    animation: fadeIn 1.5s;
+}
+
+.typing-effect{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end) forwards; 
+    padding-top: 25%;
+  }
+
+@keyframes typing {
+from {
+    width: 0; 
+}
+to {
+    width: 100%; 
+}
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
