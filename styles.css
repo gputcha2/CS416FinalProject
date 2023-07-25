@@ -14,6 +14,7 @@ svg {
     font-family: 'Montserrat', sans-serif;
     font-size: small;
     margin-top: 0%;
+    margin-right: 10%;
 }
 circle {stroke: black;}
 #tooltip {
@@ -45,9 +46,9 @@ circle {stroke: black;}
 #info {
     position: absolute;
     top: 120px;
-    right: 100px;
+    right: 1%;
     font-size: medium;
-    width: 500px;
+    width: 400px;
 }
 
 .button-div {
@@ -89,6 +90,12 @@ circle {stroke: black;}
     animation: typing 3s steps(40, end) forwards; 
     padding-top: 25%;
   }
+@media screen and (max-width: 1280px) {
+#info {
+    position: relative; 
+    margin: 20px; 
+}
+}
 
 @keyframes typing {
 from {
