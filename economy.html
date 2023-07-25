@@ -5,14 +5,15 @@
 <script src='https://d3js.org/d3.v5.min.js'></script>
 <script src="d3-annotation.js"></script>
 <body onload='init()'>
-<h1 class="header-fade">What is the relationship between a country's economy and happiness?</h1>
+<h1>What is the relationship between a country's economy and happiness?</h1>
 <div id="home-button">
     <a href="index.html" class="button">Home</a>
 </div>
-<h3 class="header-fade">Here, we will explore the relationship between some key economic indicators & how happy the citizen of that country is.</h3>
-<svg width=850 height=750>
+<h3>Here, we will explore the relationship between some key economic indicators & how happy the citizen of that country is.</h3>
+<svg width=850 height=750 id="svg1">
 </svg>
 <div id="tooltip"></div>
+<div id="tooltip1"></div>
 <div id="info" class="header-fade">
     <p>
         GDP and Income Group are some of the most widely used indicators of a country's economic health. We will try to analyze the 
@@ -22,16 +23,16 @@
         there is a positive correlation between GDP and a country's happiness score.
     </p>
     <p>For countries with a greater GDP, we observe higher happiness scores.</p>
-    <P>On the bar chart, we can also observe the average happiness scores for the four different income groups. Clearly, higher income countries have higher happiness scores.</P>
-    <p><b>Hover your mouse pointer</b> over any of the points in the scatterplot to view more information on the country.</p>
     <p>
         Next, let's explore the economy and how some important economic measures of a country are related to its happiness score.
     </p>
     <div class="button-div">
-        <a href="corruption.html" class="button">&larr; Back to Corruption</a>
+        <a href="economy_income.html" class="button">&larr; Back to Income Groups</a>
         <a href="another_page.html" class="button">Go to Economy &rarr;</a>
     </div>
 </div>
-<script src="life_exp_script.js"></script>
+<svg width=850 height=750 id="svg2">
+</svg>
+<script src="economy_script.js"></script>
 </body>
 </html>

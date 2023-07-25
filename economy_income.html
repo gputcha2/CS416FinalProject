@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="d3-annotation.js"></script>
+<body onload='init()'>
+<h1 class="header-fade">What is the relationship between a country's economy and happiness?</h1>
+<div id="home-button">
+    <a href="index.html" class="button">Home</a>
+</div>
+<h3 class="header-fade">Here, we will explore the relationship between some key economic indicators & how happy the citizen of that country is.</h3>
+<svg width=850 height=750 id="svg2">
+</svg>
+<div id="info" class="header-fade">
+    <p>
+        Income Group and GDP are some of the most widely used indicators of a country's economic health. We will try to analyze the 
+        relationship between these factors and the happiness scores of countries.
+    </p>
+    <P>On the bar chart, we can observe the average happiness scores for the four different income groups. Clearly, higher income countries have higher happiness scores.</P>
+    <p>
+        Next, we will look at the GDP.
+    </p>
+    <div class="button-div">
+        <a href="corruption.html" class="button">&larr; Back to Health</a>
+        <a href="economy.html" class="button">Go to GDP &rarr;</a>
+    </div>
+</div>
+<script src="economy_income_script.js"></script>
+</body>
+</html>

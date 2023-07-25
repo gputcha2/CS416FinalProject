@@ -67,6 +67,7 @@ circle {stroke: black;}
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .button:hover {
@@ -90,6 +91,7 @@ circle {stroke: black;}
     animation: typing 3s steps(40, end) forwards; 
     padding-top: 25%;
   }
+
 @media screen and (max-width: 1280px) {
 #info {
     position: relative; 

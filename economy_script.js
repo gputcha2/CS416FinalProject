@@ -1,11 +1,11 @@
 async function init() {
     const data = await d3.csv('https://gputcha2.github.io/CS416FinalProject/CS416Final.csv');
     console.log(data);
-    var x = d3.scaleLinear().domain([200,180000]).range([0,600]);
+    var x = d3.scaleLog().domain([200,120000]).range([0,600]);
     var y = d3.scaleLinear().domain([2,8]).range([600,0]);
     var tooltip = d3.select("#tooltip");
     const colorScale = d3.scaleOrdinal().domain(['Asia', 'Africa', 'North America', 'South America', 'Australia/Oceania', 'Europe']).range(['green', 'yellow', 'red', 'orange', 'blue', 'violet']);
-    var svg = d3.select("svg")
+    var svg = d3.select("#svg1")
                 .append("g")
                 .attr("transform","translate(50,50)");
 
@@ -79,7 +79,7 @@ async function init() {
     .attr("x", 300)
     .attr("y", 650)
     .attr("text-anchor", "middle")
-    .text("Life Expectancy");
+    .text("Gdp Per Capita (USD)");
     svg.append("text")
     .attr("x", -300)
     .attr("y", -30)
@@ -95,13 +95,13 @@ async function init() {
         tooltip.style("opacity", 1)
         .style("left", "200px")
         .style("top", "200px")
-        .html("<b>" + d.Country + "</b><br>" + "Life Expectancy - " + d.LifeExpectancy + " Happiness Score - " + d.Score);
-        verticalLine.attr("x1", x(parseInt(d.LifeExpectancy)))
+        .html("<b>" + d.Country + "</b><br>" + "Gdp Per Capita - " + d.GdpPerCapita + " Happiness Score - " + d.Score);
+        verticalLine.attr("x1", x(parseInt(d.GdpPerCapita)))
         .attr("y1", y(parseFloat(d.Score)))
-        .attr("x2", x(parseInt(d.LifeExpectancy)))
+        .attr("x2", x(parseInt(d.GdpPerCapita)))
         .attr("y2", y.range()[0])
         .style("opacity", 1);
-        horizontalLine.attr("x1", x(parseInt(d.LifeExpectancy)))
+        horizontalLine.attr("x1", x(parseInt(d.GdpPerCapita)))
         .attr("y1", y(parseFloat(d.Score)))
         .attr("x2", 0)
         .attr("y2", y(parseFloat(d.Score)))
@@ -135,7 +135,7 @@ async function init() {
         .attr("dy", "0.35em")
         .text(d => d);
 
-    d3.select("svg")
+    d3.select("#svg1")
     .append("g")
     .attr("class", "annotation-group")
     .call(makeAnnotations)
@@ -143,15 +143,15 @@ async function init() {
     .transition().duration(3000).delay(1200)
     .style("opacity", 1);
 
-    d3.select("svg").append("g")
+    d3.select("#svg1").append("g")
     .attr("transform","translate(50,50)")
     .call(d3.axisLeft(y)
     .tickValues([2,4,6,8])
     .tickFormat(d3.format("~s")));
 
-    d3.select("svg").append("g")
+    d3.select("#svg1").append("g")
     .attr("transform","translate(50,650)")
     .call(d3.axisBottom(x)
-    .tickValues([50,55,60,65,70,75,80,85])
+    .ticks(5)
     .tickFormat(d3.format("~s")));
 }
