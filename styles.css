@@ -74,11 +74,19 @@ circle {stroke: black;}
     background-color: #45a049;
 }
 
-#home-button {
+#home-button-div {
     position: absolute;
     top: 0px;
     right: 100px;
     font-size: medium;
+}
+
+#home-button {
+    background-color: #0099cc;
+}
+
+#home-button:hover {
+    background-color: #0077b3;
 }
 
 .header-fade {
