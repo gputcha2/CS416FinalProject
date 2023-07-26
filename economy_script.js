@@ -63,18 +63,7 @@ async function init() {
     .attr("y1", 0)
     .attr("x2", 0)
     .attr("y2", 0);
-    var trendLine = svg.append("line")
-    .attr("class", "trend-line")
-    .attr("x1", x(50))
-    .attr("y1", y(2.3))
-    .attr("x2", x(50))
-    .attr("y2", y(2.3))
-    .transition().duration(3000).delay(300)
-    .attr("class", "trend-line")
-    .attr("x1", x(50))
-    .attr("y1", y(2.3))
-    .attr("x2", x(85))
-    .attr("y2", y(7));
+
     svg.append("text")
     .attr("x", 300)
     .attr("y", 650)

@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="d3-annotation.js"></script>
+<body onload='init()'>
+<h1 class="header-fade">Explore the data</h1>
+<div id="home-button">
+    <a href="index.html" class="button">Home</a>
+</div>
+<h3 class="header-fade">Time to dive in!</h3>
+<svg width=850 height=750>
+</svg>
+<div id="tooltip"></div>
+<div id="info" class="header-fade">
+    <p>Click on any of the countries to view more information.
+    </p>
+    <div class="button-div">
+        <select id="yAxisDropdown" onchange="edit_items()">
+            <option value="Corruption Perception Index" selected>Corruption Perception Index</option>
+            <option value="Life Expectancy">Life Expectancy</option>
+            <option value="Gdp Per Capita">Gdp Per Capita</option>
+        </select>
+        <p id="filterLabel"><b>Filter the data to dive in:</b></p>
+        <label for="minValueX">Min Value (x): </label>
+        <input type="text" id="minValueX" placeholder="Enter Min Value" />
+        <p></p>
+        <label for="maxValueX">Max Value (x): </label>
+        <input type="text" id="maxValueX" placeholder="Enter Max Value" />
+        <p></p>
+        <label for="minValueY">Min Value (y): </label>
+        <input type="text" id="minValueY" placeholder="Enter Min Value" />
+        <p></p>
+        <label for="maxValueY">Max Value (y): </label>
+        <input type="text" id="maxValueY" placeholder="Enter Max Value" />
+        <br>
+        <p><b>Filter by Continent: </b></p>
+        <input type="checkbox" id="asia" name="filter" value="Asia">
+        <label for="asia">Asia</label>
+        <br>
+        <input type="checkbox" id="africa" name="filter" value="Africa">
+        <label for="africa">Africa</label>
+        <br>
+        <input type="checkbox" id="northamerica" name="filter" value="North America">
+        <label for="northamerica">North America</label>
+        <br>
+        <input type="checkbox" id="southamerica" name="filter" value="South America">
+        <label for="southamerica">South America</label>
+        <br>
+        <input type="checkbox" id="australia" name="filter" value="Australia/Oceania">
+        <label for="australia">Australia/Oceania</label>
+        <br>
+        <input type="checkbox" id="europe" name="filter" value="Europe">
+        <label for="europe">Europe</label>
+        <br>
+        <button onclick="filter_data()">Filter Data</button>
+        <button onclick="remove_filters()" id="remove-button">Remove Filters</button>
+    </div>
+</div>
+<script src="dashboard_script.js"></script>
+</body>
+</html>
