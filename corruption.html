@@ -15,19 +15,25 @@
 <div id="tooltip"></div>
 <div id="info" class="header-fade">
     <p>Based on way the various countries in the world are arranged in the scatterplot shown, we can draw a trendline and clearly see that
-        there is a correlation between the corruption of a country's government and the recorded levels of happiness.
+        there is a correlation between the corruption perception of a country's government and the recorded levels of happiness.
     </p>
     <p>As a country's corruption perception levels go up, the happiness levels start to decrease.</p>
     <p>
         Also note that here, our x-axis runs from 100 to 0. This is because under the corruption perceptions index measure, 
-        a lower value indicates higher levels of corruption. You can more about the corruption perceptions index <a href="https://www.transparency.org/en/cpi/2018">here</a>.
+        a lower value indicates higher levels of corruption. You can learn more about the corruption perceptions index <a href="https://www.transparency.org/en/cpi/2018">here</a>.
     </p>
+    <br>
     <p><b>Hover your mouse pointer</b> over any of the points in the scatterplot to view more information on the country.</p>
+    <b></b>
+    <input type="checkbox" id="annotation-checkbox" name="annotation-checkbox" onchange="hide_annotations()">
+    <label for="annotation-checkbox"><b>Check to view without annotations:</b> </label>
+    <br>
     <p>Next we will explore how happiness score varies with the citizens' health with one of the most commonly used indicators of health - life expectency</p>
     <div class="button-div">
+        <a href="intro.html" class="button">&larr; Go back to Intro</a>
         <a href="life_expectency.html" class="button">Go to Health &rarr;</a>
     </div>
 </div>
-<script src="script.js"></script>
+<script src="corruption_script.js"></script>
 </body>
 </html>

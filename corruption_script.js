@@ -18,30 +18,70 @@ async function init() {
             "note":{"align":"left",
             "orientation":"leftRight"}});
         
-        const annotations = [{
-            note: {
-                label: "Tend to have higher levels of corruption and as a result - we can see lower happiness levels",
-                bgPadding: 20,
-                title: "African Countries"
-            },
-            className: "annotation-text",
-            x: x(26),
-            y: y(4), 
-            dy: 25,
-            dx: 200,
-            subject: { radius: 50, radiusPadding: 10 }
-        },
+        const annotations = [
+        // {
+        //     note: {
+        //         label: "Tend to have higher levels of corruption and as a result - we can see lower happiness levels",
+        //         bgPadding: 20,
+        //         title: "African Countries"
+        //     },
+        //     className: "annotation-text",
+        //     x: x(26),
+        //     y: y(4), 
+        //     dy: 25,
+        //     dx: 200,
+        //     subject: { radius: 50, radiusPadding: 10 }
+        // },
         {
             note: {
                 label: "With this trendline we can clearly see that with increasing corruption, happiness levels decline",
                 bgPadding: 20,
                 title: "Correlation"
             },
-            className: "annotation-text",
+            className: "annotation-text-general",
             x: x(57),
             y: y(5.9), 
             dy: 160,
             dx: -75,
+            subject: { radius: 50, radiusPadding: 10 }
+        },
+        {
+            note: {
+                label: "With a lower level of corruption (CPI 71), the US has a higher happiness score of 6.886",
+                bgPadding: 20,
+                title: "United States"
+            },
+            className: "annotation-text",
+            x: x(61),
+            y: y(6.486), 
+            dy: -30,
+            dx: 10,
+            subject: { radius: 50, radiusPadding: 10 }
+        },
+        {
+            note: {
+                label: "With a higher level of corruption (CPI 22), Zimbabwe has a lower happiness score of 3.692",
+                bgPadding: 20,
+                title: "Zimbabwe"
+            },
+            className: "annotation-text",
+            x: x(12),
+            y: y(3.192), 
+            dy: 15,
+            dx: 90,
+            subject: { radius: 50, radiusPadding: 10 }
+        },
+        {
+            note: {
+                label: "Keeping with the trend, Poland- with higher corruption (CPI 60) than the US, has a lower happiness score (6.123)",
+                bgPadding: 20,
+                title: "Poland"
+            },
+            className: "annotation-text",
+            x: x(50),
+            y: y(5.623), 
+            dy: 50,
+            dx: 320,
             subject: { radius: 50, radiusPadding: 10 }
         }
     ];
@@ -154,4 +194,20 @@ async function init() {
     .call(d3.axisBottom(x)
     .tickValues([25,50,75,100])
     .tickFormat(d3.format("~s")));
+}
+
+async function hide_annotations() {
+    var annotationCheckbox = document.getElementById("annotation-checkbox");
+    if (annotationCheckbox.checked) {
+        d3.select(".annotation-group")
+        .style("opacity", 1)
+        .transition().duration(600)
+        .style("opacity", 0);
+    }
+    else{
+        d3.select(".annotation-group")
+        .style("opacity", 0)
+        .transition().duration(600)
+        .style("opacity", 1);
+    }
 }

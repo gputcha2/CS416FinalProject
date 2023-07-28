@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-h1, h3, p {
+h1, h3, p, ol, li {
     font-family: 'Montserrat', sans-serif;
     color: white;
   }
@@ -43,6 +43,11 @@ circle {stroke: black;}
         font-family: 'Montserrat', sans-serif;
         font-size: small;
     }
+.annotation-text-general text {
+    fill: #66aa66;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
 #info {
     position: absolute;
     top: 120px;
@@ -153,6 +158,10 @@ button:hover {
 
 #remove-button:hover {
     background-color: #FF6666;
+}
+
+#main-header {
+    margin-bottom: 150px;
 }
 
 @media screen and (max-width: 1280px) {

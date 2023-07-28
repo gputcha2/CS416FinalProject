@@ -18,30 +18,44 @@ async function init() {
             "note":{"align":"left",
             "orientation":"leftRight"}});
         
-        const annotations = [{
+        const annotations = [
+        {
             note: {
-                label: "Tend to have higher levels of corruption and as a result - we can see lower happiness levels",
+                label: "With a lower level of corruption (CPI 71), the US has a higher happiness score of 6.886",
                 bgPadding: 20,
-                title: "African Countries"
+                title: "United States"
             },
             className: "annotation-text",
-            x: x(26),
-            y: y(4), 
-            dy: 25,
+            x: x(81),
+            y: y(6.286), 
+            dy: 100,
+            dx: 170,
+            subject: { radius: 50, radiusPadding: 10 }
+        },
+        {
+            note: {
+                label: "With a higher level of corruption (CPI 22), Zimbabwe has a lower happiness score of 3.692",
+                bgPadding: 20,
+                title: "Zimbabwe"
+            },
+            className: "annotation-text",
+            x: x(64.314),
+            y: y(3.192), 
+            dy: 15,
             dx: 200,
             subject: { radius: 50, radiusPadding: 10 }
         },
         {
             note: {
-                label: "With this trendline we can clearly see that with increasing corruption, happiness levels decline",
+                label: "Keeping with the trend, Poland- with higher corruption (CPI 60) than the US, has a lower happiness score (6.123)",
                 bgPadding: 20,
-                title: "Correlation"
+                title: "Poland"
             },
             className: "annotation-text",
-            x: x(57),
-            y: y(5.9), 
-            dy: 160,
-            dx: -75,
+            x: x(80),
+            y: y(5.623), 
+            dy: -40,
+            dx: -250,
             subject: { radius: 50, radiusPadding: 10 }
         }
     ];
@@ -93,7 +107,7 @@ async function init() {
     .attr('fill', d => colorScale(d.Continent));
     scatter.on("mouseover", function(d,i) {
         tooltip.style("opacity", 1)
-        .style("left", "200px")
+        .style("left", "300px")
         .style("top", "200px")
         .html("<b>" + d.Country + "</b><br>" + "Life Expectancy - " + d.LifeExpectancy + " Happiness Score - " + d.Score);
         verticalLine.attr("x1", x(parseInt(d.LifeExpectancy)))
@@ -154,4 +168,20 @@ async function init() {
     .call(d3.axisBottom(x)
     .tickValues([50,55,60,65,70,75,80,85])
     .tickFormat(d3.format("~s")));
+}
+
+async function hide_annotations() {
+    var annotationCheckbox = document.getElementById("annotation-checkbox");
+    if (annotationCheckbox.checked) {
+        d3.select(".annotation-group")
+        .style("opacity", 1)
+        .transition().duration(600)
+        .style("opacity", 0);
+    }
+    else{
+        d3.select(".annotation-group")
+        .style("opacity", 0)
+        .transition().duration(600)
+        .style("opacity", 1);
+    }
 }
