@@ -21,7 +21,7 @@ async function init() {
         const annotations = [
         {
             note: {
-                label: "With a lower level of corruption (CPI 71), the US has a higher happiness score of 6.886",
+                label: "With a much higher GDP per capita ($62823), the US has a higher happiness score of 6.886",
                 bgPadding: 20,
                 title: "United States"
             },
@@ -34,7 +34,7 @@ async function init() {
         },
         {
             note: {
-                label: "With a higher level of corruption (CPI 22), Zimbabwe has a lower happiness score of 3.692",
+                label: "With a much lower GDP per capita ($2269), Zimbabwe has a lower happiness score of 3.692",
                 bgPadding: 20,
                 title: "Zimbabwe"
             },
@@ -47,7 +47,7 @@ async function init() {
         },
         {
             note: {
-                label: "Keeping with the trend, Poland- with higher corruption (CPI 60) than the US, has a lower happiness score (6.123)",
+                label: "Keeping with the trend, Poland- with higher GDP per capita ($15505) than Zimbabwe, has a higher happiness score (6.123)",
                 bgPadding: 20,
                 title: "Poland"
             },
@@ -143,7 +143,7 @@ async function init() {
     .attr("class", "annotation-group")
     .call(makeAnnotations)
     .style("opacity", 0)
-    .transition().duration(3000).delay(1200)
+    .transition().duration(3000).delay(100)
     .style("opacity", 1);
 
     d3.select("#svg1").append("g")

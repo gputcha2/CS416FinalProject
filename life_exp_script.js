@@ -21,7 +21,7 @@ async function init() {
         const annotations = [
         {
             note: {
-                label: "With a lower level of corruption (CPI 71), the US has a higher happiness score of 6.886",
+                label: "With a higher LE (78.64), the US has a higher happiness score of 6.886",
                 bgPadding: 20,
                 title: "United States"
             },
@@ -34,7 +34,7 @@ async function init() {
         },
         {
             note: {
-                label: "With a higher level of corruption (CPI 22), Zimbabwe has a lower happiness score of 3.692",
+                label: "With a low LE (61.41), Zimbabwe has a lower happiness score of 3.692",
                 bgPadding: 20,
                 title: "Zimbabwe"
             },
@@ -47,7 +47,7 @@ async function init() {
         },
         {
             note: {
-                label: "Keeping with the trend, Poland- with higher corruption (CPI 60) than the US, has a lower happiness score (6.123)",
+                label: "Keeping with the trend, Poland- with a higher LE (77.6) than Zimbabwe, has a higher happiness score (6.123)",
                 bgPadding: 20,
                 title: "Poland"
             },
@@ -93,7 +93,7 @@ async function init() {
     .attr("x", 300)
     .attr("y", 650)
     .attr("text-anchor", "middle")
-    .text("Life Expectancy");
+    .text("Life Expectancy (yrs)");
     svg.append("text")
     .attr("x", -300)
     .attr("y", -30)

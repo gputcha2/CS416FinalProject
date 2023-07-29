@@ -116,6 +116,18 @@ async function edit_items() {
     document.getElementById("southamerica").checked = false;
     document.getElementById("australia").checked = false;
     document.getElementById("europe").checked = false;
+    if (document.getElementById("yAxisDropdown").value === "Gdp Per Capita"){
+        document.getElementById("minValueX").style.display = 'none';
+        document.getElementById("maxValueX").style.display = 'none';
+        document.querySelector('label[for="minValueX"]').style.display = 'none';
+        document.querySelector('label[for="maxValueX"]').style.display = 'none';
+    }
+    else {
+        document.getElementById("minValueX").style.display = 'inline-block';
+        document.getElementById("maxValueX").style.display = 'inline-block';
+        document.querySelector('label[for="minValueX"]').style.display = 'inline-block';
+        document.querySelector('label[for="maxValueX"]').style.display = 'inline-block';
+    }
     draw_graph(null, null, null, null, false);
 }
 
@@ -266,9 +278,9 @@ async function draw_graph(minX, maxX, minY, maxY, onlyContinentFilter) {
     }
 
     if (selectedItem === 'Gdp Per Capita') {
-        if (minX != null && maxX != null && minY != null && maxY != null && !onlyContinentFilter) {
+        if (minY != null && maxY != null && !onlyContinentFilter) {
             var newdata = data.filter(d => {
-                return d.GdpPerCapita >= minX && d.GdpPerCapita <= maxX && d.Score >= minY && d.Score <= maxY && contList.includes(d.Continent);
+                return d.Score >= minY && d.Score <= maxY && contList.includes(d.Continent);
             });
         } else {
             if (onlyContinentFilter) {
@@ -386,11 +398,68 @@ function get_continent_list(data) {
     return contList;
 }
 
+async function filter(){
+    if (document.getElementById("yAxisDropdown").value === "Gdp Per Capita"){
+        filter_data_gdp();
+    }
+    else{
+        filter_data();
+    }
+}
+
 async function filter_data() {
-    var minX = document.getElementById("minValueX").value;
-    var maxX = document.getElementById("maxValueX").value;
+        var minX = document.getElementById("minValueX").value;
+        var maxX = document.getElementById("maxValueX").value;
+        var minY = document.getElementById("minValueY").value;
+        var maxY = document.getElementById("maxValueY").value;
+        var asia = document.getElementById("asia").checked;
+        var africa = document.getElementById("africa").checked;
+        var north_america = document.getElementById("northamerica").checked;
+        var south_america = document.getElementById("southamerica").checked;
+        var australia = document.getElementById("australia").checked;
+        var europe = document.getElementById("europe").checked;
+
+        if (isNaN(minX) || isNaN(maxX) || isNaN(minY) || isNaN(maxY)) {
+            alert("Please enter valid numeric values for all fields.");
+            return;
+        }
+        if (maxX >=100 || minX < 0){
+            alert("Please enter a value from 0-99.");
+            return;
+        }
+
+        if (maxY > 9 || minY < 0) {
+            alert("Please enter a value from 0-9.");
+            return;
+        }
+        if (minX === '' && maxX === '' && minY === '' && maxY === '') {
+            if (asia || africa || north_america || south_america || australia || europe) {
+                var svg = d3.select("svg");
+                svg.selectAll(".legend-item").remove();
+                svg.selectAll("circle").remove();
+                svg.selectAll(".axis-group").remove();
+                draw_graph(minX, maxX, minY, maxY, true);
+                return;
+            }
+        }
+
+        if (minX === '' || maxX === '' || minY === '' || maxY === '') {
+            alert("Please fill out all fields to filter.");
+            return;
+        }
+        var svg = d3.select("svg");
+        svg.selectAll(".legend-item").remove();
+        svg.selectAll("circle").remove();
+        svg.selectAll(".axis-group").remove();
+        draw_graph(minX, maxX, minY, maxY, false);
+}
+
+async function filter_data_gdp() {
+    console.log('entered gdp method');
     var minY = document.getElementById("minValueY").value;
     var maxY = document.getElementById("maxValueY").value;
+    console.log(minY);
+    console.log(maxY);
     var asia = document.getElementById("asia").checked;
     var africa = document.getElementById("africa").checked;
     var north_america = document.getElementById("northamerica").checked;
@@ -398,22 +467,27 @@ async function filter_data() {
     var australia = document.getElementById("australia").checked;
     var europe = document.getElementById("europe").checked;
 
-    if (isNaN(minX) || isNaN(maxX) || isNaN(minY) || isNaN(maxY)) {
+    if (isNaN(minY) || isNaN(maxY)) {
         alert("Please enter valid numeric values for all fields.");
         return;
     }
-    if (minX === '' && maxX === '' && minY === '' && maxY === '') {
+    
+    if (maxY > 9 || minY < 0) {
+        alert("Please enter a value from 0-9.");
+        return;
+    }
+    if (minY === '' && maxY === '') {
         if (asia || africa || north_america || south_america || australia || europe) {
             var svg = d3.select("svg");
             svg.selectAll(".legend-item").remove();
             svg.selectAll("circle").remove();
             svg.selectAll(".axis-group").remove();
-            draw_graph(minX, maxX, minY, maxY, true);
+            draw_graph(null, null, minY, maxY, true);
             return;
         }
     }
 
-    if (minX === '' || maxX === '' || minY === '' || maxY === '') {
+    if (minY === '' || maxY === '') {
         alert("Please fill out all fields to filter.");
         return;
     }
@@ -421,7 +495,7 @@ async function filter_data() {
     svg.selectAll(".legend-item").remove();
     svg.selectAll("circle").remove();
     svg.selectAll(".axis-group").remove();
-    draw_graph(minX, maxX, minY, maxY, false);
+    draw_graph(null, null, minY, maxY, false);
 }
 
 async function remove_filters() {

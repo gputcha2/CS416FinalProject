@@ -14,7 +14,8 @@
 </svg>
 <div id="tooltip"></div>
 <div id="info" class="header-fade">
-    <p>Click on any of the countries to view more information.
+    <p>Enter your desired filters on the data (x and y axes) after choosing the scatterplot of your choice using the dropdown menu. You can also filter by continent using the provided checkboxes.
+        Be sure to press "Filter Data" when you have entered all you filters. Press "Remove Filters" to reset your entered filters to default.
     </p>
     <div class="button-div">
         <select id="yAxisDropdown" onchange="edit_items()">
@@ -54,7 +55,7 @@
         <input type="checkbox" id="europe" name="filter" value="Europe">
         <label for="europe">Europe</label>
         <br>
-        <button onclick="filter_data()">Filter Data</button>
+        <button onclick="filter()">Filter Data</button>
         <button onclick="remove_filters()" id="remove-button">Remove Filters</button>
     </div>
 </div>
